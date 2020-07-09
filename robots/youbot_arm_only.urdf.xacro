@@ -48,4 +48,12 @@
     <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:youbot_gripper>
 
+  <link name="virtual_ee_link" />
+  <joint name="virtual_ee_joint" type="fixed">
+    <parent link="gripper_palm_link" />
+    <child link = "virtual_ee_link" />
+    <origin xyz="0.0 0.0 0.04" rpy="0.0 0.0 0.0" />
+    <!-- <origin xyz="0.0 0.0 0.1445" rpy="0.0 0.0 0.0" /> -->
+  </joint>
+
 </robot>
